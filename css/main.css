@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500|Roboto:300,400,500');
+
+:root {
+  --brand: #f26554;
+  --background: #fff;
+  --accent: #c89e5c;
+  --lightText: #fefefe;
+  --lightTextHover: #dedede;
+  --darkText: #222;
+  --secondaryText: #404040;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--darkText);
+  font-size: 1em;
+  font-family: 'Montserrat','Roboto';
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Montserrat';
+}
+
+h1 {
+  font-size: 3.052em;
+}
+
+h2 {
+  font-size: 2.441em;
+}
+
+h3 {
+  font-size: 1.953em;
+}
+
+h4 {
+  font-size: 1.563em;
+}
+
+h4 {
+  font-size: 1.25em;
+}
+
+p {
+  font-size: 1em;
+}
+
+footer {
+  background-color: var(--brand);
+  color: var(--lightText);
+  font-size: 15px;
+}
+
+#social-links a {
+  color: var(--lightText);
+  margin: auto 10px;
+}
+
+#social-links i {
+  color: var(--lightText);
+  font-size: 25px !important;
+}
+
+#social-links a:hover
+, #social-links a:hover i {
+  color: var(--lightTextHover);
+  text-decoration: none;
+}
+
+#mainNav {
+  padding: 0px 50px;
+}
+
+.btn {
+  border-radius: 0;
+  padding: 8px 17px;
+}
+
+.btn-pri {
+  border: 3px solid var(--brand);
+  background-color: var(--brand);
+  color: white;
+  font-weight: 500;
+}
+
+.btn-pri:hover {
+  border: 3px solid var(--brand);
+  background-color: var(--background);
+  color: var(--brand);
+  font-weight: 450;
+}
+
+.btn-sec {
+  border: 3px solid var(--brand);
+  background-color: var(--background);
+  color: var(--brand);
+  font-weight: 550;
+}
+
+.btn-sec:hover {
+  border: 3px solid var(--brand);
+  background-color: var(--brand);
+  color: white;
+  font-weight: 450;
+}
+
+.header-hr {
+  width: 70px;
+  height: 5px;
+  background-color: var(--brand);
+  margin-top: 15px;
+}

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Jia Ling | Portfolio</title>
+
+    <!--Open Source-->
+    <link rel="stylesheet" href="packages/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="packages/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="packages/owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="packages/aos/aos.css">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="packages/jquery-3.5.1.min.js"></script>
+    <script src="packages/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="packages/owlcarousel/owl.carousel.min.js"></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <a class="navbar-brand js-scroll-trigger" href="#landingDiv">Jia Ling</a>
+        <button class="custom-toggler navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div> <!--Responsive Navbar-->
+    </nav>
+
+    <div class="container-fluid">
+      <div id="landingDiv" class="row justify-content-center">
+        <div class="col-lg-6 order-lg-1 order-2">
+          <img id="kobot" src="images/kobot2.png" alt="kobot" class="d-block mx-auto" data-aos="zoom-in-up" data-aos-duration="1000">
+        </div>
+
+
+        <div id="intro" class="col-lg-6 order-lg-2 order-1 text-center">
+          <h1 id="typeLineOne"></h1>
+          <h5 class="my-3" id="typeLineTwo" style="color: var(--secondaryText);"></h5>
+          <div class="mt-4">
+            <a class="btn btn-sec mr-2 fade-in" href="#about">Get to know me</a>
+            <a class="btn btn-sec fade-in" href="files/Ko Jia Ling Resume.pdf" target="_blank">Resume</a>
+          </div>
+        </div> <!--Caption-->
+      </div> <!--Row-->
+
+      <!-- <div class="row justify-content-center">
+        <i class="fa fa-chevron-down" style="font-size: 1.25rem; color: #aaa;"></i>
+      </div> -->
+
+      <div id="about" class="row justify-content-center nav-section">
+        <div class="col-md-9 my-4">
+          <h2>About Me</h2>
+          <div class="header-hr"></div>
+        </div>
+
+        <div class="col-md-9 row">
+          <div class="col-lg-3 mb-4">
+            <img src="images/Meee.jpeg" alt="" style="max-width: 100%; max-height: 230px;">
+          </div>
+
+          <div class="col-lg-9">
+            <p><b>Education:</b> Diploma in Cybersecurity and Digital Forensics, Nanyang Polytechnic</p>
+            <p><b>Email:</b> kojialing@outlook.com</p>
+            <p><b>City:</b> Singapore</p>
+
+            <p>Fresh graduate seeking a job in the cybersecurity trade, particularly in the area of research and solution development.
+              I hope to work with an organization that provides me ample opportunities for growth, and will enable me to enhance my skills and capabilities.</p>
+          </div>
+
+        </div>
+      </div> <!--Row-->
+
+      <div id="projects" class="row justify-content-center nav-section">
+        <div class="col-md-9 my-4">
+          <h2>Projects</h2>
+          <div class="header-hr"></div>
+        </div>
+
+
+        <div class="col-md-9"> <!--All Projects-->
+              <div class="project row mb-4" style="padding:30px;">
+                <div class="col-lg-5">
+                  <div id="aspj-carousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="images/ASPJ landing page.png" class="d-block w-100" alt="App security project landing page">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/ASPJ post details.png" class="d-block w-100" alt="App security project view post">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/ASPJ error log dashboard.png" class="d-block w-100" alt="App security project error board dashboard">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/ASPJ activity log dashboard.png" class="d-block w-100" alt="App security project activity board dashboard">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/ASPJ flask monitoring dashboard.png" class="d-block w-100" alt="App security project logging">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#aspj-carousel" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#aspj-carousel" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div> <!--Carousel-->
+                </div>
+
+                <div class="col-md-1 p-0" style="height: 20px;"></div>
+
+                <div class="col-lg-6 align-self-center">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div><h3 class="d-inline">Lorem Ipsum Forum</h3></div>
+                    <div><a href="https://github.com/Kobot7/D-Crypt" class="project-link"><i class="fa fa-github"></i></a></div>
+                  </div>
+
+                  <div class="my-4">
+                    Online forum for Application Security project. Secured the web application against web vulnerabilities, specifically broken access control and injection.
+                  </div>
+                  <div>
+                    <span class="project-tag project-tag-dist">Distinction</span>
+                    <span class="project-tag">Web Security</span>
+                    <span class="project-tag">Python</span>
+                  </div>
+                </div> <!--Project Description-->
+              </div> <!--Project-->
+              <!--Application Security-->
+
+              <div class="project row mb-4" style="padding:30px;">
+                <div class="col-lg-5">
+                  <div id="dcrypt-carousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="images/D-Crypt landing page.png" class="d-block w-100" alt="D Crypt landing page">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/D-Crypt cipher.png" class="d-block w-100" alt="D Crypt monoalphabet cipher tool">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/D-Crypt learn.png" class="d-block w-100" alt="D Crypt monoalphabet learning page">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#dcrypt-carousel" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#dcrypt-carousel" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div> <!--Carousel-->
+                </div>
+
+                <div class="col-md-1 p-0" style="height: 20px;"></div>
+
+                <div class="col-lg-6 align-self-center">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div><h3 class="d-inline">D-Crypt</h3></div>
+                    <div><a href="https://github.com/Kobot7/D-Crypt" class="project-link"><i class="fa fa-github"></i></a></div>
+                  </div>
+
+                  <div class="my-4">
+                    Web-based application that provides cryptography tools for encryption and decryption, with explanations of cryptographic algorithms.
+                  </div>
+                  <div>
+                    <span class="project-tag project-tag-dist">Distinction</span>
+                    <span class="project-tag">Cryptography</span>
+                    <span class="project-tag">Python</span>
+                    <span class="project-tag">JavaScript</span>
+                  </div>
+                </div> <!--Project Description-->
+              </div> <!--Project-->
+              <!--D-Crypt-->
+
+              <div class="project row my-4" style="padding:30px;">
+                <div class="col-lg-5">
+                  <div id="retrograde-carousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="images/Retrograde landing page.png" class="card-img-top" alt="Retrograde landing page">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/Retrograde snake game.png" class="d-block w-100" alt="Retrograde snake game">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/Retrograde puzzle game.png" class="d-block w-100" alt="Retrograde puzzle game">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#retrograde-carousel" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#retrograde-carousel" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div> <!--Carousel-->
+                </div>
+
+                <div class="col-md-1 p-0" style="height: 20px;"></div>
+
+                <div class="col-lg-6 align-self-center">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div><h3 class="d-inline">Retrograde</h3></div>
+                    <div><a href="https://github.com/Kobot7/Retrograde" class="project-link"><i class="fa fa-github"></i></a></div>
+                  </div>
+
+                  <div class="my-4">
+                    Old-school gaming website with games such as Snake and Puzzle (swap the pieces). All games & features in this project were made using JavaScript.
+                  </div>
+                  <div>
+                    <span class="project-tag project-tag-dist">Distinction</span>
+                    <span class="project-tag">JavaScript</span>
+                  </div>
+                </div> <!--Project Description-->
+              </div> <!--Project-->
+              <!--Retrograde-->
+
+              <div class="project row my-4" style="padding:30px;">
+                <div class="col-lg-5">
+                  <div id="appdev-carousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="images/AppDev dashboard.png" class="card-img-top" alt="App Development dashboard">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/AppDev dashboard 2.png" class="d-block w-100" alt="App Development dashboard">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/AppDev catalog.png" class="d-block w-100" alt="App Development catalog">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/AppDev product settings.png" class="d-block w-100" alt="App Development product settings">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/AppDev product statistics.png" class="d-block w-100" alt="App Development product statistics">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/AppDev transactions.png" class="d-block w-100" alt="App Development transactions">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#appdev-carousel" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#appdev-carousel" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div> <!--Carousel-->
+                </div>
+
+                <div class="col-md-1 p-0" style="height: 20px;"></div>
+
+                <div class="col-lg-6 align-self-center">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div><h3 class="d-inline">Delorem Ipsum Online Store</h3></div>
+                    <div><a href="https://github.com/Kobot7/Delorem-Ipsum-Online-Store" class="project-link"><i class="fa fa-github"></i></a></div>
+                  </div>
+
+                  <div class="my-4">
+                    Online pharmacy store for App Development project. Created admin platform for managing products and transactions.
+                  </div>
+                  <div>
+                    <span class="project-tag">Python</span>
+                    <span class="project-tag">Plotly</span>
+                  </div>
+                </div> <!--Project Description-->
+              </div> <!--Project-->
+              <!--App Dev-->
+
+        </div> <!--Column-->
+      </div> <!--Row-->
+
+
+      <footer class="row justify-content-center mt-4">
+        <div class="col-md-9 py-4 d-flex justify-content-between align-items-center">
+          <div>
+            &copy; Ko Jia Ling, 2021
+          </div>
+          <div id="social-links">
+            <a href="mailto:kojialing@outlook.com" target="_blank"><i class="fa fa-envelope"></i></a>
+            <a href="https://github.com/Kobot7/" target="_blank"><i class="fa fa-github"></i></a>
+            <a href="https://linkedin.com/in/kojialing/" target="_blank"><i class="fa fa-linkedin"></i></a>
+          </div>
+        </div>
+      </footer>
+    </div>  <!--Container-->
+
+    <!-- <div id="welcome">
+      <h1>WELCOME</h1>
+      <div id="welcomeRect"></div>
+    </div> -->
+  </body>
+
+  <script>
+    $(function() {
+      AOS.init();
+    });
+
+    var i = 0;
+    var txt1 = "Hello! I'm Jia Ling.";
+    function typeLineOne() {
+      if (i < txt1.length) {
+        document.getElementById("typeLineOne").innerHTML += txt1.charAt(i);
+        i++;
+        if ([5].includes(i)) {
+          setTimeout(typeLineOne, 200);
+        }
+        else {
+          setTimeout(typeLineOne, 70);
+        }
+      }
+    }
+
+    var i2 = 0;
+    var txt2 = "I am a cybersecuity graduate with an interest in solving complex problems.";
+    function typeLineTwo() {
+      if (i2 < txt2.length) {
+        document.getElementById("typeLineTwo").innerHTML += txt2.charAt(i2);
+        i2++;
+        if ([7,16,24,30,34].includes(i2)) {
+          setTimeout(typeLineTwo, 60);
+        }
+        else {
+          setTimeout(typeLineTwo, 25);
+        }
+      }
+    }
+
+    function fadeInBtn() {
+      $("a.fade-in").fadeIn(2000);
+    }
+
+    function start() {
+      setTimeout(typeLineOne, 1200);
+      setTimeout(typeLineTwo, 3600);
+      setTimeout(fadeInBtn, 6300);
+    }
+
+    $(document).ready(start);
+  </script>
+
+  <script src="packages/waypoints/jquery.waypoints.min.js"></script>
+  <script src="packages/js/navbar.js"></script>
+  <script src="packages/aos/aos.js"></script>
+</html>

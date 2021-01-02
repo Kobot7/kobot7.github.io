@@ -1,0 +1,94 @@
+body {
+  height: 1000px;
+}
+
+#welcome {
+  z-index: 9999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--background);
+}
+
+#welcome h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0%;
+  animation: textAppear 0.1s linear 1s 1 forwards;
+}
+
+#rect {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-150px, -50%);
+
+  position: relative;
+  background-color: var(--brand);
+  height: 5em;
+  width: 0.5em;
+
+  animation: textReveal 2s ease-in forwards, rectShrink 0.3s ease-in 2.2s forwards, rectExpand 0.5s ease-in 2.5s forwards;
+}
+
+@keyframes textReveal {
+  0% {
+    width: 0.5rem;
+    transform: translate(-150px, -50%);
+  }
+
+  29% {
+    transform: translate(-150px, -50%);
+  }
+
+  30% {
+    width: 18.5rem;
+    transform: translate(-150px, -50%);
+  }
+
+
+  100% {
+    width: 0.5rem;
+    transform: translate(9rem, -50%);
+  }
+}
+
+@keyframes rectShrink {
+  0% {
+    height: 5em;
+    transform: translate(9rem, -50%);
+  }
+
+  100% {
+    height: 0.5em;
+    transform: translate(9rem, 5rem);
+  }
+}
+
+@keyframes rectExpand {
+  0% {
+    width: 0.5rem;
+    transform: translate(9rem, 5rem);
+  }
+
+  100% {
+    width: 15rem;
+    transform: translate(-30rem, 5rem);
+  }
+}
+
+@keyframes textAppear {
+  0% {
+    opacity: 0%;
+  }
+  99% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
