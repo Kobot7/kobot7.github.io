@@ -1,0 +1,47 @@
+.container-fluid {
+  padding-top: 100px;
+}
+
+p.heading {
+  margin-top: 32px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+#back {
+  color: var(--brand);
+}
+
+#back:hover {
+  color: var(--darkTextHover);
+  text-decoration: none;
+}
+
+.carousel-indicators li {
+  background-color: #999 !important;
+  height: 4px;
+}
+
+.carousel-caption h5
+, .carousel-caption p {
+  color: var(--darkText) !important;
+ }
+
+ .carousel-caption {
+     position: relative;
+     left: 0;
+     top: 0;
+ }
+
+ @media only screen and (max-width: 576px) {
+    .carousel-caption {
+        h5 {
+            font-size: 1rem;
+        }
+    }
+}
+
+h6 {
+  text-decoration: underline;
+  margin-top: 24px;
+}

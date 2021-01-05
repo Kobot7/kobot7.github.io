@@ -48,7 +48,7 @@ $(document).ready(function(){
   $("a").on('click', function(event) {
 
     // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
+    if (this.hash !== "" && ["#aspj-carousel", "#dcrypt-carousel", "#retrograde-carousel", "#appdev-carousel"].indexOf(this.hash) < 0) {
       // Prevent default anchor click behavior
       event.preventDefault();
 
