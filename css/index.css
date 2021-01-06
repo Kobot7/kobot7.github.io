@@ -79,3 +79,36 @@
   padding-top: 80px !important;
   margin-top: 0px !important;
 }
+
+
+#contact a {
+  color: #aaa;
+  margin: auto 10px;
+}
+
+#contact i {
+  color: #ddd;
+  font-size: 25px !important;
+}
+
+#contact a:hover
+, #contact a:hover i {
+  color: #888;
+  text-decoration: none;
+}
+
+.contact {
+  color: #aaa;
+  margin: auto 8px;
+}
+
+.contact i {
+  color: #ddd;
+  font-size: 25px !important;
+}
+
+.contact:hover
+, .contact:hover i {
+  color: #888;
+  text-decoration: none;
+}

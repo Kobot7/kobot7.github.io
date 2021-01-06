@@ -30,7 +30,7 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="files/Ko Jia Ling Resume.pdf" target="_blank">Resume</a></li>
             </ul>
         </div> <!--Responsive Navbar-->
     </nav>
@@ -45,9 +45,14 @@
         <div id="intro" class="col-lg-6 order-lg-2 order-1 text-center">
           <h1 id="typeLineOne"></h1>
           <h5 class="my-3" id="typeLineTwo" style="color: var(--secondaryText);"></h5>
-          <div class="mt-4">
+          <div class="my-4">
             <a class="btn btn-sec mr-2 fade-in" href="#about">Get to know me</a>
             <a class="btn btn-sec fade-in" href="files/Ko Jia Ling Resume.pdf" target="_blank">Resume</a>
+          </div>
+          <div id="contact">
+            <a href="mailto:kojialing@outlook.com" target="_blank"><i class="fa fa-envelope"></i></a>
+            <a href="https://linkedin.com/in/kojialing/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/Kobot7/" target="_blank"><i class="fa fa-github"></i></a>
           </div>
         </div> <!--Caption-->
       </div> <!--Row-->
@@ -309,8 +314,8 @@
           </div>
           <div id="social-links">
             <a href="mailto:kojialing@outlook.com" target="_blank"><i class="fa fa-envelope"></i></a>
-            <a href="https://github.com/Kobot7/" target="_blank"><i class="fa fa-github"></i></a>
             <a href="https://linkedin.com/in/kojialing/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/Kobot7/" target="_blank"><i class="fa fa-github"></i></a>
           </div>
         </div>
       </footer>
@@ -362,7 +367,17 @@
       setTimeout(fadeInBtn, 6300);
     }
 
-    $(document).ready(start);
+    if (sessionStorage.getItem("visited")) {
+      $("#kobot").removeAttr("data-aos");
+      $("#kobot").removeAttr("data-aos-duration");
+      document.getElementById("typeLineOne").innerHTML = txt1
+      document.getElementById("typeLineTwo").innerHTML = txt2
+      $("a.fade-in").show();
+    }
+    else {
+      sessionStorage.setItem("visited", "True");
+      $(document).ready(start);
+    }
   </script>
 
   <script src="packages/waypoints/jquery.waypoints.min.js"></script>
