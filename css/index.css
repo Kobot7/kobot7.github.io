@@ -71,7 +71,8 @@
   color: var(--darkText);
 }
 
-.fade-in {
+.fade-in,
+#contact {
   display: none;
 }
 

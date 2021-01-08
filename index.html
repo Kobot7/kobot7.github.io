@@ -359,6 +359,7 @@
 
     function fadeInBtn() {
       $("a.fade-in").fadeIn(2000);
+      $("#contact").fadeIn(2000);
     }
 
     function start() {
@@ -373,6 +374,7 @@
       document.getElementById("typeLineOne").innerHTML = txt1
       document.getElementById("typeLineTwo").innerHTML = txt2
       $("a.fade-in").show();
+      $("#contact").show();
     }
     else {
       sessionStorage.setItem("visited", "True");
